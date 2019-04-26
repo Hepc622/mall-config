@@ -7,6 +7,12 @@ spring:
 #        采集率
       percentage: 1.0
 
+# fescar 事务组名字
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: tx_group
+
 # 注册中心配置
 eureka:
   client:
