@@ -9,7 +9,7 @@ spring:
 		driver-class-name: com.mysql.jdbc.Driver
 		url: jdbc:mysql://127.0.0.1:3306/mall_tx_manager?characterEncoding=UTF-8
 		username: root
-		password: 123456
+		password: 
 # redis 的设置信息. 线上请用Redis Cluster
 	redis: 
 		host: 127.0.0.1
