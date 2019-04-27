@@ -3,13 +3,13 @@ server:
 
 spring:
 	application:
-		name: TransactionManager
+		name: transaction-manager
 # JDBC 数据库配置
 	datasource:
 		driver-class-name: com.mysql.jdbc.Driver
 		url: jdbc:mysql://127.0.0.1:3306/mall_tx_manager?characterEncoding=UTF-8
 		username: root
-		password: 123456
+		password: 
 # redis 的设置信息. 线上请用Redis Cluster
 	redis: 
 		host: 127.0.0.1
@@ -17,10 +17,12 @@ spring:
 		password: 
 
 # 数据库方言
-#spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+	jpa:
+		database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # 第一次运行可以设置为: create, 为TM创建持久化数据库表
-#spring.jpa.hibernate.ddl-auto: validate
+		hibernate:
+			ddl-auto: validate
 
 # TM监听IP. 默认为 127.0.0.1
 tx-lcn:
