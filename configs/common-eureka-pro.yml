@@ -1,0 +1,5 @@
+# 注册clien
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.1:8761/eureka/,http://192.168.0.2:8761/eureka/,http://192.168.0.3:8761/eureka/
